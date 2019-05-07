@@ -14,8 +14,8 @@ RUN gem install fastlane
 RUN gem install bundle
 
 # Install gradle
-RUN wget https://services.gradle.org/distributions/gradle-5.4-rc-1-bin.zip
+RUN wget https://services.gradle.org/distributions/gradle-5.4-rc-1-all.zip
 RUN mkdir /opt/gradle
 RUN mkdir /apk
-RUN unzip -d /opt/gradle gradle-5.4-rc-1-bin.zip
+RUN unzip -d /opt/gradle gradle-5.4-rc-1-all.zip
 RUN export PATH=$PATH:/opt/gradle/gradle-3.5.0-alpha13/bin
